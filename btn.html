@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    button {
+      width: 200px;
+      padding: 20px;
+      margin: 200px 30px;
+      cursor: pointer;
+      text-align: center;
+      background: transparent;
+      border-radius: 20px;
+      border: 1px solid black;
+      text-transform: uppercase;
+      font-weight: 800;
+      color: pink;
+      position: relative;
+    }
+    span {
+      background: rebeccapurple;
+      width: 0;
+      height: 100%;
+      position: absolute;
+      border-radius: 20px;
+      left: 0;
+      top: 0;
+      z-index: -1;
+      transition: 0.5s;
+    }
+    button:hover span {
+      width: 100%;
+    }
+    button:hover {
+      border: none;
+    }
+  </style>
+  <body>
+    <button><span></span>hi</button>
+    <button><span></span>hello</button>
+  </body>
+</html>
